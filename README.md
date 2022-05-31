@@ -1,6 +1,23 @@
-##
+## I have 2 github accounts (work & personal) for which I want to store credentials in my Windows 10 (in secure way).
+[personal account](https://stackoverflow.com/questions/31351359/how-to-log-out-of-one-github-account-and-use-another-account/
+48604028#48604028)
 [How to set GitHub user.name and user.email per Repository?](https://crunchify.com/how-to-set-github-user-name-and-user-email-per-repository-different-config-for-different-repository/) - 
 
+
+- 1. open your current Repository file \.git\config
+- 2. added below codes and save it.
+```
+[user]
+	name = yourgithub name
+	email = yourpersonalEmail@gmail.com
+[credential]
+    useHttpPath = true
+```
+- 3. if you login other github, you logout it.
+- 4. push your code to remote github.
+- 5. github login popup shown.
+
+###  orginal
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
