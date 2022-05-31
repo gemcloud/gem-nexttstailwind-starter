@@ -1,0 +1,115 @@
+/* 
+  I use Color Hunt [https://colorhunt.co/] Color Palettes for Designers and Artists
+  declare our color theme here! These variable defined at the tailwind.config.js 
+*/
+.theme-pink {
+  --color-custom-100: 130, 38, 89;
+  --color-custom-200: 179, 65, 128;
+  --color-custom-300: 227, 107, 174;
+  --color-custom-400: 248, 161, 209;
+}
+
+.theme-blue {
+  --color-custom-100: 27, 38, 44;
+  --color-custom-200: 15, 76, 117;
+  --color-custom-300: 50, 130, 184;
+  --color-custom-400: 187, 225, 250;
+}
+
+.theme-gold {
+  --color-custom-100: 216, 194, 146;
+  --color-custom-200: 91, 91, 91;
+  --color-custom-300: 182, 113, 113;
+  --color-custom-400: 193, 144, 101;
+}
+
+.theme-mellow {
+  --color-custom-100: 249, 247, 207;
+  --color-custom-200: 242, 220, 187;
+  --color-custom-300: 187, 187, 187;
+  --color-custom-400: 170, 170, 170;
+}
+
+.theme-swapshop {
+  --color-custom-100: 18, 0, 120;
+  --color-custom-200: 157, 1, 145;
+  --color-custom-300: 253, 58, 105;
+  --color-custom-400: 254, 205, 26;
+}
+
+.theme-grass {
+  --color-custom-100: 190, 219, 187;
+  --color-custom-200: 141, 181, 150;
+  --color-custom-300: 146, 129, 122;
+  --color-custom-400: 112, 112, 112;
+}
+
+.theme-red {
+  --color-custom-100: 81, 24, 69;
+  --color-custom-200: 144, 12, 63;
+  --color-custom-300: 199, 0, 57;
+  --color-custom-400: 255, 87, 51;
+}
+
+.theme-green-summer {
+  --color-custom-100: 205, 208, 203;
+  --color-custom-200: 207, 218, 200;
+  --color-custom-300: 232, 234, 230;
+  --color-custom-400: 124, 148, 115;
+}
+
+.theme-baby-pink {
+  --color-custom-100: 205, 208, 203;
+  --color-custom-200: 241, 209, 208;
+  --color-custom-300: 251, 172, 204;
+  --color-custom-400: 248, 117, 170;
+}
+
+.theme-autumn {
+  --color-custom-100: 74, 57, 51;
+  --color-custom-200: 240, 165, 0;
+  --color-custom-300: 228, 88, 38;
+  --color-custom-400: 230, 213, 184;
+}
+
+.theme-racing-green {
+  --color-custom-100: 41, 89, 57;
+  --color-custom-200: 233, 176, 223;
+  --color-custom-300: 173, 238, 207;
+  --color-custom-400: 232, 239, 235;
+}
+
+.theme-dark {
+  --color-custom-100: 48, 56, 65;
+  --color-custom-200: 46, 71, 80;
+  --color-custom-300: 246, 201, 14;
+  --color-custom-400: 247, 247, 247;
+}
+
+.theme-monzo {
+  --color-custom-100: 221, 221, 221;
+  --color-custom-200: 34, 40, 49;
+  --color-custom-300: 48, 71, 94;
+  --color-custom-400: 240, 84, 84;
+}
+
+.theme-white {
+  --color-custom-100: 244, 244, 242;
+  --color-custom-200: 232, 232, 232;
+  --color-custom-300: 187, 191, 202;
+  --color-custom-400: 73, 84, 100;
+}
+
+.theme-jumper {
+  --color-custom-100: 43, 46, 74;
+  --color-custom-200: 83, 53, 74;
+  --color-custom-300: 144, 55, 73;
+  --color-custom-400: 232, 69, 69;
+}
+
+.theme-moody {
+  --color-custom-100: 21, 21, 21;
+  --color-custom-200: 48, 27, 63;
+  --color-custom-300: 60, 65, 92;
+  --color-custom-400: 180, 165, 165;
+}
