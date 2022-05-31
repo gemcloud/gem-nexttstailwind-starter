@@ -4,6 +4,8 @@
 48604028#48604028)
 [How to set GitHub user.name and user.email per Repository?](https://crunchify.com/how-to-set-github-user-name-and-user-email-per-repository-different-config-for-different-repository/) -
 
+[solution](https://stackoverflow.com/questions/31351359/how-to-log-out-of-one-github-account-and-use-another-account/48604028#48604028) - credential
+
 - 1. open your current Repository file \.git\config
 - 2. added below codes and save it.
 
