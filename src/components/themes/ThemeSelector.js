@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ThemeContext } from "@/components/Themes/ThemeContext";
+import { ThemeContext } from "@/components/themes/ThemeContext";
 
 export const ThemeSelector = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
@@ -17,7 +17,7 @@ export const ThemeSelector = () => {
         width="100"
         height="100"
         // src={colour}
-        src={"/assests/theme-" + colour + ".png"}
+        src={"/images/colorhunt/theme-" + colour + ".png"}
         aria-label={colourLabel}
         alt={colourLabel}
       />

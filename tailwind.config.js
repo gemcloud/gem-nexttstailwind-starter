@@ -16,15 +16,23 @@ function withOpacityValue(variableName) {
 // And Credit : https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo
 // apply opacity to your custom colours too!!!
 // because if we’d just used hex values, then the tailwind opacity values are ignored.
-// OK: How to opacityValue? : bg-custom-100/80 ==> 80 is opacityValue
-// OK: How to opacityVariable? : bg-custom-100 bg-opacity-25 ==> "bg-opacity-25" is opacityVariable
+// What is the tailwind "opacityValue"? : bg-custom-100/80 ==> 80 is opacityValue
+// What is the tailwind "opacityVariable"? : bg-custom-100 bg-opacity-25 ==> "bg-opacity-25" is opacityVariable
 function withOpacityVariable(variable) {
   return ({ opacityVariable, opacityValue }) => {
     if (opacityValue !== undefined) {
-      return `rgba(var(${variable}), ${opacityValue})`;
+      return `rgba(var(${variable}), ${opacityValue})`; // ==> rgba(var(--color-custom-400), 0.75)
     }
     if (opacityVariable !== undefined) {
+      //  `rgba(var(${variable}), var(${opacityVariable}, 1))`
+      // ==> rgba(var(--color-custom-400), var(--tw-bg-opacity))
+      // if opacityVariable does not exist at tailwind, use "1" !!!
+      //.bg-custom-400 {
+      //     --tw-bg-opacity: 1;
+      //     background-color: rgba(var(--color-custom-400), var(--tw-bg-opacity));
+      // }
       return `rgba(var(${variable}), var(${opacityVariable}, 1))`;
+      //0.5 not wokred! return `rgba(var(${variable}), var(${opacityVariable}, 0.5))`;
     }
     return `rgb(var(${variable}))`;
   };
@@ -39,6 +47,12 @@ module.exports = {
         primary: ["Inter", ...fontFamily.sans],
       },
       colors: {
+        custom: {
+          100: withOpacityVariable("--color-custom-100"),
+          200: withOpacityVariable("--color-custom-200"),
+          300: withOpacityVariable("--color-custom-300"),
+          400: withOpacityVariable("--color-custom-400"),
+        },
         primary: {
           // Customize it on globals.css :root
           50: withOpacityVariable("--tw-clr-primary-50"),

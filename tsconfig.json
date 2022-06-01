@@ -19,7 +19,7 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/themes/demoChildComponent.jsx", "src/components/themes/ThemeContext.jsx", "src/components/themes/ThemeSelector.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/themes/demoChildComponent.js", "src/components/themes/ThemeContext.jsx", "src/components/themes/ThemeSelector.js"],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
