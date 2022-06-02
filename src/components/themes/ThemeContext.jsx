@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 
 export const ThemeContext = React.createContext();
 
