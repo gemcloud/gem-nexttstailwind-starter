@@ -77,3 +77,22 @@
     background-size: 0 2px, 100% 2px;
   }
 }
+
+[data-theme="dark"].Theme-wrapper {
+  background: #1a1a1a;
+  color: #fff;
+}
+.Theme-wrapper {
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #444;
+  background: #f5f6f7;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.Theme-toggler {
+  display: block;
+  margin: auto;
+}

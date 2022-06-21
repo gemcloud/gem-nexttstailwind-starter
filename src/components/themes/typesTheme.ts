@@ -2,6 +2,12 @@ interface ValueObject {
   [themeName: string]: string;
 }
 
+export type Theme = "light" | "dark";
+export type ThemeContextType = {
+  theme: Theme;
+  changeTheme: (theme: Theme) => void;
+};
+
 export interface UseThemeProps {
   /** List of all available theme names */
   //themes: string[];
@@ -10,7 +16,8 @@ export interface UseThemeProps {
   /** Update the theme */
   setTheme: (theme: string) => void;
   /** Active theme name */
-  theme?: string;
+  // theme?: string;
+  theme: Theme;
   /** If `enableSystem` is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to `theme` */
   resolvedTheme?: string;
   /** If enableSystem is true, returns the System theme preference ("dark" or "light"), regardless what the active theme is */

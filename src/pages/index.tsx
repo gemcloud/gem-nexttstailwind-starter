@@ -16,8 +16,9 @@ const Home: NextPage = () => {
     <Layout>
       <Seo />
 
-      <main>
-        <section className="bg-white">
+      <main className="App">
+        {/* <section className="bg-white"> */}
+        <section className="">
           <div className="layout flex min-h-screen flex-col items-center justify-center text-center">
             <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
             <p className="mt-2 text-sm text-gray-800">
